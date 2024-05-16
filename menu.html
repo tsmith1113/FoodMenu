@@ -3,9 +3,8 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
+    <title>Menu Selection</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-     <!-- <link href="css/style.css" rel="stylesheet">  -->
   </head>
   <body>
     <header>
@@ -20,64 +19,37 @@
                   <li class="nav-item">
                     <a class="nav-link active" aria-current="page" href="index.html">Home</a>
                   </li>
+                </ul>
               </div>
             </div>
           </nav>
     </header>
     <main>
-        <div id = "themenu">
-        <div class="container">
+        <div id="themenu">
+          <div class="container">
             <div class="row mt-4">
                 <div class="col">
                     <h1>Menu</h1>
-                    <select id="menuCategoryDropdown">
+                    <select id="menuCategoryDropdown" class="form-select">
                         <option selected value="">Select a category</option>
-                        <option value="drinkItem">Drinks</option>
-                        <option value="entreeItem">Entrees</option>
-                        <option value="dessertItem">Desserts</option>
+                        <option value="drinks">Drinks</option>
+                        <option value="entrees">Entrees</option>
+                        <option value="desserts">Desserts</option>
                     </select>
-                   
-                    
+                </div>
             </div>
-            
-            
-        </div>
-        <div class = "row mt-4">
-          <div class="col">
-            <select id = "drinksList" size = "10" class ="form select">
-
-            </select>
-          
+            <div class="row mt-4">
+                <div class="col">
+                    <select id="menuList" size="10" class="form-select">
+                    </select>
+                </div>
+            </div>
           </div>
         </div>
-        <div class = "row">
-          <div class="col">
-            <select id = "entreesList" size = "10" class ="form select">
-              
-            </select>
-        </div>
-    </div>
-    <div class = "row">
-      <div class="col">
-        <select id = "dessertsList" size = "10" class ="form select">
-          
-        </select>
-  
-    
-     </main>
+    </main>
+    <footer>
+    </footer>
 
-
-     <footer>
-
-     </footer>
-
-
-
-
-
-
-
-    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="script/menu.js"></script>
   </body>
