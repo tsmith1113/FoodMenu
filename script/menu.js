@@ -29,7 +29,7 @@ let menu = {
 
    function populateMenuList(){
     console.log("populate")
-    menuList.innerHTML = '';
+    
 
    // Add default option
    let defaultOption = document.createElement("option");
@@ -37,13 +37,5 @@ let menu = {
    defaultOption.value = '';
    menuList.appendChild(defaultOption);
    }
-
-   // add option for drinks
-   menu.drinks.forEach(drink => {
-    let newOption = document.createElement("option");
-    newOption.textContent = drink;
-    newOption.value = drink;
-    menuList.appendChild(newOption);
-   });
    
    

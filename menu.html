@@ -27,27 +27,41 @@
     <main>
         <div id = "themenu">
         <div class="container">
-            <div class="row">
+            <div class="row mt-4">
                 <div class="col">
                     <h1>Menu</h1>
-                    <label for="categoryDropdown">Choose a category:</label>
-                    <select id="categoryDropdown">
-                        <option value="">Select a category</option>
-                        <option value="drinks">Drinks</option>
-                        <option value="entrees">Entrees</option>
-                        <option value="desserts">Desserts</option>
+                    <select id="menuCategoryDropdown">
+                        <option selected value="">Select a category</option>
+                        <option value="drinkItem">Drinks</option>
+                        <option value="entreeItem">Entrees</option>
+                        <option value="dessertItem">Desserts</option>
                     </select>
-                    <br>
-                    <label for="menuItems">Menu Items:</label>
-                    <select id="menuItems" multiple>
-                    </select>
+                   
                     
             </div>
             
             
         </div>
+        <div class = "row mt-4">
+          <div class="col">
+            <select id = "drinksList" size = "10" class ="form select">
+
+            </select>
+          
+          </div>
+        </div>
+        <div class = "row">
+          <div class="col">
+            <select id = "entreesList" size = "10" class ="form select">
+              
+            </select>
         </div>
     </div>
+    <div class = "row">
+      <div class="col">
+        <select id = "dessertsList" size = "10" class ="form select">
+          
+        </select>
   
     
      </main>
